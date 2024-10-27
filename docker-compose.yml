@@ -8,6 +8,7 @@ services:
       - MONGO_URI=mongodb://mongo:27017/auth
       - JWT_ACCESS_TOKEN_SECRET=acces_secret
       - JWT_REFRESH_TOKEN_SECRET=jwt_secret
+      - PORT=3005
     depends_on:
       - mongo
 
