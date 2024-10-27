@@ -3,7 +3,7 @@ services:
   app:
     build: .
     ports:
-      - '3000:3000'
+      - '3005:3005'
     environment:
       - MONGO_URI=mongodb://mongo:27017/auth
       - JWT_ACCESS_TOKEN_SECRET=acces_secret

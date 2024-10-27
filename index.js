@@ -24,3 +24,6 @@ app.listen(process.env.PORT, async () => {
 	await mongoose.connect(process.env.MONGO_URI)
 	console.log(`Server listening on port ${process.env.PORT}`)
 })
+
+// cvi-asdsadsad@mail.ru
+// 12345

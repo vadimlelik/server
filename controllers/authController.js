@@ -1,5 +1,5 @@
 import User from '../model/User.model.js'
-import bcrypt from 'bcrypt'
+import bcrypt from 'bcryptjs'
 import { TokenService } from '../service/tokenCervice.js'
 
 export const register = async (req, res) => {
