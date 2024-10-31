@@ -26,10 +26,10 @@ export const register = async (req, res) => {
 	await TokenService.saveToken(newUser._id, refreshToken)
 
 	res.cookie('refreshToken', refreshToken, {
-		maxAge: 7 * 24 * 60 * 60 * 1000,
 		httpOnly: true,
 		secure: false,
-		// sameSite: 'lax',
+		sameSite: 'lax',
+		maxAge: 7 * 24 * 60 * 60 * 1000,
 	})
 
 	return res.status(200).json({
